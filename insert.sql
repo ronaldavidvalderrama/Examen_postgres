@@ -29,15 +29,15 @@ INSERT INTO techzone.categorias (descripcion, estado) VALUES
 
 
 INSERT INTO techzone.productos (nombre, id_categoria, id_proveedor, precio_venta, cantidad_stock, estado, codigo_barras) VALUES
-('Laptop Dell Inspiron 15',     1, 1, 2500000, 15, 1, '7501234567890'),
-('Laptop HP Pavilion 14',       1, 2, 2800000, 10, 1, '7501234567891'),
+('Laptop Gamer',     1, 1, 2500000, 4, 1, '7501234567890'),
+('Laptop HP',       1, 2, 2800000, 5, 1, '7501234567891'),
 ('iPhone 13 128GB',             2, 3, 4200000, 20, 1, '7501234567892'),
-('Samsung Galaxy S22',          2, 3, 3900000, 18, 1, '7501234567893'),
+('Samsung Galaxy',          2, 3, 3900000, 18, 1, '7501234567893'),
 ('Teclado Mecánico Logitech',   3, 4, 350000,  30, 1, '7501234567894'),
 ('Mouse Inalámbrico Microsoft', 3, 4, 120000,  25, 1, '7501234567895'),
-('Tablet Samsung Galaxy Tab A', 4, 5, 1500000, 12, 1, '7501234567896'),
-('Memoria RAM 16GB DDR4',       5, 1, 450000,  40, 1, '7501234567897'),
-('Disco Duro SSD 1TB Kingston', 5, 2, 520000,  35, 1, '7501234567898'),
+('Tablet Samsung Galaxy', 4, 5, 1500000, 12, 1, '7501234567896'),
+('Memoria RAM 16GB DDR4',       5, 1, 450000,  6, 1, '7501234567897'),
+('Disco Duro 1TB', 5, 2, 520000,  10, 1, '7501234567898'),
 ('Auriculares Bluetooth Sony',  3, 5, 280000,  22, 1, '7501234567899');
 
 
@@ -54,9 +54,9 @@ INSERT INTO techzone.ventas_detalle (id_venta, id_producto, cantidad, subtotal, 
 
 -- Venta 2: Valeria compra un iPhone
 INSERT INTO techzone.ventas_detalle (id_venta, id_producto, cantidad, subtotal, estado) VALUES
-(2, 3, 1, 4200000, 1);
+(2, 3, 7, 4200000, 1);
 
 -- Venta 3: Luisa compra audífonos y una memoria RAM
 INSERT INTO techzone.ventas_detalle (id_venta, id_producto, cantidad, subtotal, estado) VALUES
 (3, 10, 1, 280000, 1),
-(3, 8, 2, 900000, 1);
+(3, 8, 5, 900000, 1);
