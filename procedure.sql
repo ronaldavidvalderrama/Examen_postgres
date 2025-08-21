@@ -1,0 +1,1 @@
+-- Un procedimiento almacenado para registrar una venta.
